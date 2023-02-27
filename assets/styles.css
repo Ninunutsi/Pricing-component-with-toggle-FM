@@ -188,6 +188,8 @@ main{
 .blue{
   color: white;
   background-color: rgba(105,111,221,1);
+  background: linear-gradient(90deg, rgba(163,168,240,1) 0%, rgba(105,111,221,1) 100%);
+
 }
 
 .blue-txt{
