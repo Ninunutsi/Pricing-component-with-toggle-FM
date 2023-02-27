@@ -17,12 +17,11 @@
 
 main{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: hsl(240, 78%, 98%);
     background-image: url(./images/bg-bottom.svg), url(./images/bg-top.svg);
     background-position: left bottom, right top;
     background-repeat: no-repeat, no-repeat;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,3 +110,106 @@ main{
     color: var(--LightGrayishBlue);
     letter-spacing: 0.5px;
   }
+
+/* cards */
+.cards{
+  margin-top: 8vh;
+  display: flex;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 2rem 3rem;
+  gap: 15px;
+  border-radius: 8px;
+  color: var(--GrayishBlue);
+  width: 300px;
+}
+
+.type{
+  font-size: 18px;
+  line-height: 28px;
+}
+.price-div{
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.price{
+  font-size: 3.3rem;
+  color: var(--DarkGrayishBlue);
+}
+
+.dollar{
+  font-size: 2.2rem;
+  color: var(--DarkGrayishBlue);
+}
+
+.line{
+  border: 1.3px solid hsl(240, 78%, 98%);
+  width: 100%;
+}
+
+.facilities{
+  font-size: 13px;
+}
+
+.learn-more{
+  margin-top: 15px;
+  padding: 12px;
+  cursor: pointer;
+  width: 100%;
+  border: 1px solid white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  border-radius: 5px;
+  color: white;
+  background: linear-gradient(90deg, rgba(163,168,240,1) 0%, rgba(105,111,221,1) 100%);
+}
+
+.learn-more:hover{
+  border: 1px solid rgba(105,111,221,1);
+  color: rgba(105,111,221,1);
+  background: white;
+  transition: 2s;
+}
+
+.white{
+  margin: 20px 0;
+}
+
+.blue{
+  color: white;
+  background-color: rgba(105,111,221,1);
+}
+
+.blue-txt{
+  color: white;
+}
+
+.blue-line{
+  border: 0.1px solid var(--LightGrayishBlue);
+}
+
+.blue-learn-more{
+  background: white;
+  color: rgba(105,111,221,1);
+}
+
+.blue-learn-more:hover{
+  background: rgba(105,111,221,1);
+  color: white;
+  transition: 1s;
+  border: 1px solid white;
+}
+
+.blue-dollar{
+  color: white;
+}
